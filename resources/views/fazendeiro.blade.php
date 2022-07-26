@@ -96,7 +96,7 @@
                     <br>
                     
                     @if($tela == 'alterar')
-                            <form id="alterar" action="/altera-fazendeiro" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="" method="post">
+                            <form id="alterar" action="altera-fazendeiro" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="" method="post">
                             <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="id">ID<span class="required">*</span>
                                 </label>
@@ -105,7 +105,7 @@
                                 </div>
                             </div>
                         @else
-                            <form id="incluir" action="/inclui-fazendeiro" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="" method="post">
+                            <form id="incluir" action="inclui-fazendeiro" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="" method="post">
                         @endif
                             @csrf <!--{{ csrf_field() }}-->
 

@@ -13,7 +13,7 @@
             </div>
         </div>
     </div>
-    <form id="filtro" action="/pesquisa-vendas" method="get" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+    <form id="filtro" action="pesquisa-vendas" method="get" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
         <div class="form-group">
             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="data_nascimento">Data do nascimento<span class="required">*</span>
             </label>

@@ -15,7 +15,7 @@
                 </div>
             </div>
         </div>
-    </div><form id="filtro" action="/pesquisa-vendas" method="get" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
+    </div><form id="filtro" action="pesquisa-vendas" method="get" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="">
         <div class="form-group">
             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="id">ID</label>
             <div class="col-md-6 col-sm-6 col-xs-12">
@@ -97,7 +97,7 @@
                 <div class="x_content">
                     <br>
                     @if($tela == 'alterar')
-                    <form id="alterar" action="/altera-vendas" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="" method="POST">
+                    <form id="alterar" action="altera-vendas" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="" method="POST">
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12" for="id">ID<span class="required">*</span>
                             </label>
@@ -106,7 +106,7 @@
                             </div>
                         </div>
                         @else
-                        <form id="incluir" action="/inclui-vendas" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="" method="post">
+                        <form id="incluir" action="inclui-vendas" data-parsley-validate="" class="form-horizontal form-label-left" novalidate="" method="post">
                             @endif
                             @csrf <!--{{ csrf_field() }}-->
 
