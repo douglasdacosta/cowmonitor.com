@@ -14,7 +14,9 @@
 use App\Http\Controllers\HistoricosController;
 
 Auth::routes();
+
 Route::get('/','DashboardController@index')->name('dashboard')->middleware('auth');
+
 Route::get('/home','DashboardController@index')->name('dashboard')->middleware('auth');
 Route::get('/fazenda','FazendaController@index')->name('Fazenda');
 Route::get('/pesquisa-fazenda','FazendaController@pesquisar')->name('pesquisa-fazenda');
