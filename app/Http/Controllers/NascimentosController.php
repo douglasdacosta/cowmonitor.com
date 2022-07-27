@@ -114,7 +114,7 @@ class NascimentosController extends BaseController {
         $data_nascimento = explode('-', explode(' ', $nascimentos[0]->data_nascimento)[0]);
         $data_nascimento = Carbon::createMidnightDate($data_nascimento[0], $data_nascimento[1], $data_nascimento[2]);
         $hoje = Carbon::now();
-        $idade = $data_nascimento->diffInMonths($hoje);
+        $idade = $data_nascimento->diffInMonths($hoje);        
     	$data = array(
 				'tela' => 'alterar',
 				'nascimentos' => $nascimentos,

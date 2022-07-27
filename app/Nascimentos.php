@@ -43,13 +43,13 @@ class Nascimentos extends Model
     public function getAllNascimentosMesFemea() {
         
         $nowdate =  Carbon::now()->format('Y-m');
-    	return $this->where('ativo', '=', 1)->where('sexo', '=', 0)->whereDate('data_nascimento', '>=', "$nowdate-1")->get()->count();
+    	return $this->where('ativo', '=', 1)->where('sexo', '=', 'F')->whereDate('data_nascimento', '>=', "$nowdate-1")->get()->count();
     }
     
     public function getAllNascimentosMesMacho() {
         
         $nowdate =  Carbon::now()->format('Y-m');
-    	return $this->where('ativo', '=', 1)->where('sexo', '=', 1)->whereDate('data_nascimento', '>=', "$nowdate-1")->get()->count();
+    	return $this->where('ativo', '=', 1)->where('sexo', '=', 'M')->whereDate('data_nascimento', '>=', "$nowdate-1")->get()->count();
     }
     
     public function getAllNascimentos6Mes1ano() {

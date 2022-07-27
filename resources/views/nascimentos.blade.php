@@ -172,7 +172,7 @@
                                     <div class="col-md-6 col-sm-6 col-xs-12">
                                         <select class="form-control" id="sexo" name="sexo">
                                             <option @if (isset($nascimentos[0]->sexo) && $nascimentos[0]->sexo == 'M') selected="selected" @else{{''}}@endif value="M">Macho</option>
-                                            <option @if (isset($nascimentos[0]->sexo) && $nascimentos[0]->sexo == 'F') selected="selected" @else{{''}}@endif value="M">Femea</option>
+                                            <option @if (isset($nascimentos[0]->sexo) && $nascimentos[0]->sexo == 'F') selected="selected" @else{{''}}@endif value="F">Femea</option>
                                         </select>
                                     </div>
                                 </div>
